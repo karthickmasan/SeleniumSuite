@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>TestNG:  Login Logout</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Logout</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Dec 25 10:56:05 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>239 seconds (239625 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.aeps.testscript.AddToCart.VerifyLoginSuccess()'><b>VerifyLoginSuccess</b><br>Test class: com.aeps.testscript.AddToCart<br>Test method: Desc: Add and remove product in cart<br/>
+<a href="#Output-7540944" onClick='toggleBox("Output-7540944", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7540944" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7540944">
+</br>Open flipkart application<br/>
+</br>login into application<br/>
+</br>Seach item as "Samsung 4g mobiles"<br/>
+</br>Filters - Price - reduce to Rs.25,000<br/>
+</br>Check-in FAssured<br/>
+</br> Product Selection[SAMSUNG Galaxy On8 (Gold, 16 GB)]<br/>
+</br>click on Add product to Cart<br/>
+</br>Navigate to Cart page<br/>
+</br>Click Remove Item / cart to remove all item and click continue shopping<br/>
+</br>go in to account and verify account page<br/>
+</div>
+</td>
+<td></td>
+<td>79</td>
+<td>com.aeps.testscript.AddToCart@aa12dd</td></tr>
+<tr>
+<td title='com.aeps.testscript.LoginInAEPS.VerifyLoginSuccess()'><b>VerifyLoginSuccess</b><br>Test class: com.aeps.testscript.LoginInAEPS<br>Test method: Desc: Login into application<br/>
+<a href="#Output-5184085" onClick='toggleBox("Output-5184085", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5184085" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5184085">
+</br>switch to login application<br/>
+</br>switch to login application<br/>
+</br>login into application<br/>
+</br>verifyWelComeMessage<br/>
+</br>logout from application<br/>
+</br>verify logout successfully and click continue login button<br/>
+</br>verfy homepage<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.aeps.testscript.LoginInAEPS@1d7a715</td></tr>
+<tr>
+<td title='com.aeps.testscript.InValidLoginVallidation.VerifyLoginValidation()'><b>VerifyLoginValidation</b><br>Test class: com.aeps.testscript.InValidLoginVallidation<br>Test method: Desc: verify login validation<br/>
+<a href="#Output-1759024" onClick='toggleBox("Output-1759024", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1759024" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1759024">
+</br> click on login link<br/>
+</br> click on sign in button<br/>
+</br>verify validation message Please enter valid Email ID/Mobile number<br/>
+</br>enter invalid user name<br/>
+</br>click on sign in button<br/>
+</br>verify validation message Please enter Password<br/>
+</br>enter invalid user name<br/>
+</br>enter wrong password<br/>
+</br>click on sign in button<br/>
+</br>verify validation message You are not registered with us. Please sign up<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.aeps.testscript.InValidLoginVallidation@11f39f9</td></tr>
+</table><p>
+</body>
+</html>

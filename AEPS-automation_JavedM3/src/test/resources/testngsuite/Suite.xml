@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" verbose="10">
+
+	<listeners>
+		<listener class-name="com.aeps.reports.ExtentReporterNG" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="org.testng.reporters.EmailableReporter" />
+		<listener class-name="com.aeps.reports.CustomReport" />
+	</listeners>
+
+
+	<test name="Test Suite" preserve-order="true" verbose="2">
+		<classes>
+			<class name="com.aeps.testscript.AddToCartDataProvider" />
+			<class name="com.aeps.testscript.AddToCart" />
+			<class name="com.aeps.testscript.LoginInAEPS" />
+			<class name="com.aeps.testscript.InValidLoginVallidation" /> 
+		</classes>
+	</test>
+
+</suite>
